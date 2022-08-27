@@ -1,6 +1,6 @@
 # vcqpudisasm
 
-Disassemble machine codes of VideoCore IV and VideoCore VI QPU. Inspired by [Terminus-IMRC/vc6qpudisas](https://github.com/Terminus-IMRC/vc6qpudisas).
+Disassemble machine codes of VideoCore IV and VideoCore VI QPUs. Inspired by [Terminus-IMRC/vc6qpudisas](https://github.com/Terminus-IMRC/vc6qpudisas).
 
 
 ## Setting up
