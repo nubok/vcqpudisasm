@@ -5,10 +5,16 @@
 #include <broadcom/qpu/qpu_disasm.h>
 #include <util/ralloc.h>
 
-int main(void)
+int main(int argc, char **argv)
 {
+    if (argc < 2)
+    {
+        fprintf(stderr, "Usage: vc6qpudisas version\n\nVersions known to work are 33, 41 and 42.\n");
+        return -1;
+    }
+
     struct v3d_device_info devinfo = {
-        .ver = 42,
+        .ver = (uint8_t) atoi(argv[1]),
     };
 
     char line[4096];
