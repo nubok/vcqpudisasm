@@ -51,5 +51,5 @@ add  r0, r1, r2      ; fmul  rf61, rf62, rf63
 ```
 
 See
-[mesa/src/broadcom/qpu/tests/qpu_disasm.c](https://gitlab.freedesktop.org/mesa/mesa/blob/master/src/broadcom/qpu/tests/qpu_disasm.c)
+[mesa/src/broadcom/qpu/tests/qpu_disasm.c](https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/src/broadcom/qpu/tests/qpu_disasm.c)
 for other examples.
