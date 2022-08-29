@@ -5,7 +5,7 @@ Disassemble machine codes of VideoCore IV and VideoCore VI QPUs. Inspired by [Te
 
 ## Setting up
 
-First, you need to build the disassembler in [Mesa 3d](https://www.mesa3d.org/):
+First, you need to build the disassembler in [Mesa 3D](https://www.mesa3d.org/):
 
 ```shell
 $ git clone https://gitlab.freedesktop.org/mesa/mesa.git --depth=1
