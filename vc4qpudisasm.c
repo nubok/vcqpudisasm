@@ -13,7 +13,11 @@ int main(void)
         const uint64_t insn = strtoull(line, NULL, 0);
 
         vc4_qpu_disasm(&insn, 1);
-		fprintf(stderr, "\n");
+        /*
+	* vc4_qpu_disasm prints the output to stderr; see
+	* https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/src/gallium/drivers/vc4/vc4_qpu_disasm.c
+	*/
+        fprintf(stderr, "\n");
     }
 
     return 0;
