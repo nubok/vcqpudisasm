@@ -17,7 +17,7 @@ $ ninja src/broadcom/qpu/libbroadcom_qpu.a src/util/libmesa_util.a src/gallium/d
 $ cd ../../
 ```
 
-After that, vcqpudisasm can be built as:
+After that, vcqpudisasm can be built via
 
 ```shell
 $ git clone https://github.com/nubok/vcqpudisasm.git
