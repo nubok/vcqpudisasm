@@ -9,21 +9,21 @@ First, you need to build the disassembler in [Mesa 3D](https://www.mesa3d.org/):
 
 ```shell
 $ git clone https://gitlab.freedesktop.org/mesa/mesa.git --depth=1
-$ cd mesa/
-$ mkdir build/
-$ cd build/
+$ cd mesa
+$ mkdir build
+$ cd build
 $ meson .. -Dgallium-drivers=vc4,v3d -Dvulkan-drivers=broadcom -Dplatforms=x11
 $ ninja src/broadcom/qpu/libbroadcom_qpu.a src/util/libmesa_util.a src/gallium/drivers/vc4/libvc4.a
-$ cd ../../
+$ cd ../..
 ```
 
 After that, vcqpudisasm can be built via
 
 ```shell
 $ git clone https://github.com/nubok/vcqpudisasm.git
-$ cd vcqpudisasm/
-$ mkdir build/
-$ cd build/
+$ cd vcqpudisasm
+$ mkdir build
+$ cd build
 $ cmake .. -DCMAKE_PREFIX_PATH="$(realpath ../../mesa);$(realpath ../../mesa/build)"
 $ make
 ```
